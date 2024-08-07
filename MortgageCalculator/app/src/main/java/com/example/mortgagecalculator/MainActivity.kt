@@ -1,4 +1,4 @@
-package com.example.mortgagecalculator
+package com.example.myapplication
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -13,37 +13,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.mortgagecalculator.ui.theme.MortgageCalculatorTheme
 
-
-
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContent {
-            MortgageCalculatorTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
-            }
-        }
-    }
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    MortgageCalculatorTheme {
-        Greeting("Android")
+        setContentView(R.layout.activity_main)
     }
 }
