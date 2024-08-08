@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/home_page"
     android:layout_width="match_parent"
     android:layout_height="1200dp"
-    android:background="#F0E4FF">
+    android:background="#F0E4FF"
+    tools:context=".SecondActivity">
 
     <Button
         android:id="@+id/sign_out"

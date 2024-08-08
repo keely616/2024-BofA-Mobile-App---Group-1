@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:xlink="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
     android:id="@+id/sign_on"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F0E4FF" >
+    android:background="#F0E4FF">
 
     <RelativeLayout
         android:id="@+id/status_bar_"
@@ -31,8 +35,9 @@
         android:layout_centerHorizontal="true"
         android:background="#ABD1F3"
         android:fontFamily="@font/inder"
-        android:text="Login"
+        android:text="@string/login"
         android:textColor="#4C1492"
+        android:textColorLink="#4C1492"
         android:translationY="700dp" />
 
     <EditText
@@ -112,10 +117,8 @@
         android:layout_width="wrap_content"
         android:layout_height="11dp"
         android:layout_centerHorizontal="true"
-        android:autoLink="web"
         android:background="#00FFFFFF"
         android:fontFamily="@font/inder"
-        android:linksClickable="true"
         android:text="@string/hyperlink"
         android:textColor="#4C1492"
         android:textColorLink="#4C1492"
