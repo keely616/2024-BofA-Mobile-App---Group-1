@@ -1,0 +1,139 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sign_on"
+    android:layout_width="411dp"
+    android:layout_height="891dp"
+    android:background="#F0E4FF"
+    android:clipToOutline="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/status_bar_"
+        android:layout_width="411dp"
+        android:layout_height="54dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#F0E4FF" />
+
+    <RelativeLayout
+        android:id="@+id/image"
+        android:layout_width="300dp"
+        android:layout_height="175dp"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="82dp"
+        android:background="@drawable/bank_of_america_logo_transparent_images"
+        android:clipToOutline="true" />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="#ABD1F3"
+        android:fontFamily="@font/inder"
+        android:text="Login"
+        android:textColor="#4C1492"
+        android:translationY="700dp" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="#FFFFFF"
+        android:editable="true"
+        android:ems="20"
+        android:fontFamily="@font/inder"
+        android:inputType="textEmailAddress"
+        android:padding="5dp"
+        android:text="jane.doe@email.com"
+        android:textAlignment="textStart"
+        android:textColor="#878484"
+        android:translationY="500dp"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="#FFFFFF"
+        android:editable="true"
+        android:ems="20"
+        android:fontFamily="@font/inder"
+        android:inputType="textPassword"
+        android:padding="5dp"
+        android:text="password"
+        android:textAlignment="textStart"
+        android:textColor="#878484"
+        android:translationY="600dp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inder"
+        android:labelFor="@id/editTextTextEmailAddress"
+        android:text="Email"
+        android:textColor="#4C1492"
+        android:textSize="20sp"
+        android:translationX="80dp"
+        android:translationY="470dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inder"
+        android:labelFor="@id/editTextTextPassword"
+        android:text="Password"
+        android:textColor="#4C1492"
+        android:textSize="20sp"
+        android:translationX="80dp"
+        android:translationY="570dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/inder"
+        android:text="Sign In"
+        android:textAlignment="center"
+        android:textColor="#4C1492"
+        android:textSize="48sp"
+        android:translationY="350dp" />
+
+    <Button
+        android:id="@+id/forgot"
+        android:layout_width="wrap_content"
+        android:layout_height="11dp"
+        android:layout_centerHorizontal="true"
+        android:autoLink="web"
+        android:background="#00FFFFFF"
+        android:fontFamily="@font/inder"
+        android:linksClickable="true"
+        android:text="@string/hyperlink"
+        android:textColor="#4C1492"
+        android:textColorLink="#4C1492"
+        android:textSize="11sp"
+        android:translationY="645dp" />
+
+    <EditText
+        android:id="@+id/editTextTime"
+        android:layout_width="72dp"
+        android:layout_height="56dp"
+        android:layout_centerHorizontal="true"
+        android:clickable="false"
+        android:ems="10"
+        android:fontFamily="@font/inder"
+        android:inputType="time"
+        android:text="9:41"
+        android:textAlignment="center"
+        android:textColor="#4C1491"
+        android:visibility="visible" />
+
+</RelativeLayout>
+
