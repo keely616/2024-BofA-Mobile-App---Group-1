@@ -1,16 +1,20 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:xlink="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
     android:id="@+id/sign_on"
-    android:layout_width="411dp"
-    android:layout_height="891dp"
-    android:background="#F0E4FF"
-    android:clipToOutline="true">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0E4FF">
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <RelativeLayout
         android:id="@+id/status_bar_"
         android:layout_width="411dp"
         android:layout_height="54dp"
-        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:background="#F0E4FF" />
 
@@ -21,61 +25,63 @@
         android:layout_alignParentTop="false"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="82dp"
-        android:background="@drawable/bank_of_america_logo_transparent_images"
-        android:clipToOutline="true" />
+        android:background="@drawable/bank_of_america_logo_transparent_images" />
 
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:background="#ABD1F3"
         android:fontFamily="@font/inder"
-        android:text="Login"
+        android:text="@string/login"
         android:textColor="#4C1492"
+        android:textColorLink="#4C1492"
         android:translationY="700dp" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/editEmail"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
+        android:allowUndo="true"
+        android:autofillHints="emailAddress"
         android:background="#FFFFFF"
+        android:contextClickable="true"
         android:editable="true"
         android:ems="20"
         android:fontFamily="@font/inder"
         android:inputType="textEmailAddress"
         android:padding="5dp"
-        android:text="jane.doe@email.com"
         android:textAlignment="textStart"
         android:textColor="#878484"
         android:translationY="500dp"
         android:visibility="visible" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/editPassword"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
+        android:autofillHints="password"
         android:background="#FFFFFF"
         android:editable="true"
         android:ems="20"
         android:fontFamily="@font/inder"
         android:inputType="textPassword"
         android:padding="5dp"
-        android:text="password"
         android:textAlignment="textStart"
         android:textColor="#878484"
         android:translationY="600dp"
         android:visibility="visible" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/emailLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/inder"
-        android:labelFor="@id/editTextTextEmailAddress"
+        android:labelFor="@id/editEmail"
         android:text="Email"
         android:textColor="#4C1492"
         android:textSize="20sp"
@@ -83,11 +89,11 @@
         android:translationY="470dp" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/passwordLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/inder"
-        android:labelFor="@id/editTextTextPassword"
+        android:labelFor="@id/editPassword"
         android:text="Password"
         android:textColor="#4C1492"
         android:textSize="20sp"
@@ -95,7 +101,7 @@
         android:translationY="570dp" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -111,29 +117,13 @@
         android:layout_width="wrap_content"
         android:layout_height="11dp"
         android:layout_centerHorizontal="true"
-        android:autoLink="web"
         android:background="#00FFFFFF"
         android:fontFamily="@font/inder"
-        android:linksClickable="true"
         android:text="@string/hyperlink"
         android:textColor="#4C1492"
         android:textColorLink="#4C1492"
         android:textSize="11sp"
         android:translationY="645dp" />
-
-    <EditText
-        android:id="@+id/editTextTime"
-        android:layout_width="72dp"
-        android:layout_height="56dp"
-        android:layout_centerHorizontal="true"
-        android:clickable="false"
-        android:ems="10"
-        android:fontFamily="@font/inder"
-        android:inputType="time"
-        android:text="9:41"
-        android:textAlignment="center"
-        android:textColor="#4C1491"
-        android:visibility="visible" />
 
 </RelativeLayout>
 

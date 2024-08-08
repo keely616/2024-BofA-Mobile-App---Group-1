@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_page"
+    android:layout_width="match_parent"
+    android:layout_height="1200dp"
+    android:background="#F0E4FF"
+    tools:context=".SecondActivity">
+
+    <Button
+        android:id="@+id/sign_out"
+        android:layout_width="wrap_content"
+        android:layout_height="11dp"
+        android:autoLink="web"
+        android:background="#00FFFFFF"
+        android:fontFamily="@font/inder"
+        android:linksClickable="true"
+        android:text="@string/sign_out"
+        android:textColor="#4C1492"
+        android:textColorLink="#4C1492"
+        android:textSize="11sp"
+        android:translationY="20dp" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/inder"
+        android:text="Welcome"
+        android:textAlignment="center"
+        android:textColor="#4C1492"
+        android:textSize="48sp"
+        android:translationY="50dp"
+        android:elevation="8dp"
+        android:layout_gravity="center"/>
+
+    <View
+        android:id="@+id/group_1"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="200dp"
+        android:layout_centerHorizontal="true"
+        android:background="#ABD1F3"
+        android:elevation="8dp"
+        android:layout_gravity="center"
+        android:radius="20dp"
+        />
+
+
+</RelativeLayout>
