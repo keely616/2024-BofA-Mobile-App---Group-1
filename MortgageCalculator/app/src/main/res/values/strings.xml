@@ -1,6 +1,4 @@
 <resources>
     <string name="app_name">Mortgage Calculator</string>
     <string name="hyperlink"><a href="https://secure.bankofamerica.com/auth/forgot/reset-entry/">Forgot Password?</a></string>
-    <string name="sign_out"><a href="res/layout/activity_main.xml">Sign Out</a></string>
-    <string name="login"><a href="res/layout/activity_second.xml">Login</a></string>
 </resources>
