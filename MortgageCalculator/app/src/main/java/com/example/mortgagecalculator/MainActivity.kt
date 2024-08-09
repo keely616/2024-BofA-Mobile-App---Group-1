@@ -23,7 +23,7 @@ import com.example.mortgagecalculator.ui.theme.MortgageCalculatorTheme
 class MainActivity : ComponentActivity() {
 
     // Add button for login
-    private lateinit var login_button: Button
+    private lateinit var mloginButton: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,11 +32,11 @@ class MainActivity : ComponentActivity() {
         val mButton1 = findViewById<Button>(R.id.forgot)
         mButton1.movementMethod = LinkMovementMethod.getInstance()
 
-        login_button = findViewById(R.id.login)
+        mloginButton = findViewById(R.id.login)
 
         // Intents are objects of the android.content.Intent type. Your code can send them to the Android system defining
         // the components you are targeting. Intent to start an activity called SecondActivity with the following code.
-        login_button.setOnClickListener {
+        mloginButton.setOnClickListener {
             val intent = Intent(this, SecondActivity::class.java)
             // start the activity connect to the specified class
             startActivity(intent)
@@ -47,17 +47,17 @@ class MainActivity : ComponentActivity() {
 class SecondActivity : ComponentActivity() {
 
     // Add button for signout
-    private lateinit var sign_out_button: Button
+    private lateinit var signOutButton: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second)
 
-        sign_out_button = findViewById(R.id.sign_out)
+        signOutButton = findViewById(R.id.sign_out)
 
         // Intents are objects of the android.content.Intent type. Your code can send them to the Android system defining
         // the components you are targeting. Intent to start an activity called SecondActivity with the following code.
-        sign_out_button.setOnClickListener {
+        signOutButton.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             // start the activity connect to the specified class
             startActivity(intent)
