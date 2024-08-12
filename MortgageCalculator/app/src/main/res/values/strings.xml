@@ -2,15 +2,15 @@
     <string name="app_name">Mortgage Calculator</string>
     <string name="hyperlink"><a href="https://secure.bankofamerica.com/auth/forgot/reset-entry/">Forgot Password?</a></string>
 
-    <string name="house1address">2015 Carroll Ave</string>
-    <string name="house1city">San Francisco, CA 94124</string>
-    <string name="house1price">$620,000</string>
+    <string name="house1address">2803 N Cascade Ave</string>
+    <string name="house1city">Colorado Springs, CO 80907</string>
+    <string name="house1price">$285,000</string>
 
-    <string name="house2address">324 Sawyer St</string>
-    <string name="house2city">San Francisco, CA 94134</string>
-    <string name="house2price">$749,000</string>
+    <string name="house2address">7765 Valley Quail Point</string>
+    <string name="house2city">Colorado Springs, CO 80907</string>
+    <string name="house2price">$220,000</string>
 
-    <string name="house3address">655 37th Ave</string>
-    <string name="house3city">San Francisco, CA 94121</string>
-    <string name="house3price">$989,000</string>
+    <string name="house3address">2902 Airport Rd APT 107</string>
+    <string name="house3city">Colorado Springs, CO 80910</string>
+    <string name="house3price">$214,973</string>
 </resources>

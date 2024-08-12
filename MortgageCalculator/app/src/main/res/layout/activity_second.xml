@@ -75,7 +75,7 @@
                     android:layout_height="100dp"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="5dp"
-                    android:src="@drawable/house1"
+                    android:src="@drawable/house1pic"
                     android:translationZ="10dp" />
 
                 <TextView
@@ -144,7 +144,7 @@
                     android:layout_height="100dp"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="5dp"
-                    android:src="@drawable/house2"
+                    android:src="@drawable/house2pic"
                     android:translationZ="10dp" />
 
                 <TextView
@@ -213,7 +213,7 @@
                     android:layout_height="100dp"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="5dp"
-                    android:src="@drawable/house3"
+                    android:src="@drawable/house3pic"
                     android:translationZ="10dp" />
 
                 <TextView
