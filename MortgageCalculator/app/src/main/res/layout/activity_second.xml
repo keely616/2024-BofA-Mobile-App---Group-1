@@ -7,21 +7,21 @@
     android:layout_height="1200dp"
     android:background="#F0E4FF"
     tools:context=".SecondActivity">
-
     <Button
         android:id="@+id/sign_out"
         android:layout_width="wrap_content"
-        android:layout_height="11dp"
-        android:autoLink="web"
-        android:background="#00FFFFFF"
+        android:layout_height="wrap_content"
+        android:textSize="10dp"
+        android:background="#ABD1F3"
         android:fontFamily="@font/inder"
-        android:linksClickable="true"
-        android:text="@string/sign_out"
+        android:text="<@string/SIGN OUT"
         android:textColor="#4C1492"
         android:textColorLink="#4C1492"
-        android:textSize="11sp"
-        android:translationY="20dp" />
+         />
 
+
+
+    <!-- Shows text that welcome and greet user -->
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
@@ -29,25 +29,218 @@
         android:layout_centerHorizontal="true"
         android:fontFamily="@font/inder"
         android:text="Welcome"
-        android:textAlignment="center"
         android:textColor="#4C1492"
         android:textSize="48sp"
         android:translationY="50dp"
         android:elevation="8dp"
-        android:layout_gravity="center"/>
+        />
+
+    <TextView
+        android:id="@+id/welcome_subtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/inder"
+        android:text="Let's find the"
+        android:textColor="#4C1492"
+        android:textSize="22sp"
+        android:letterSpacing="0.1"
+        android:translationY="50dp"
+        android:elevation="8dp"
+        android:layout_marginTop="75dp"/>
+
+    <TextView
+        android:id="@+id/welcome_subtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/inder"
+        android:text="perfect fit for you"
+        android:textColor="#4C1492"
+        android:textSize="22sp"
+        android:letterSpacing="0.1"
+        android:translationY="50dp"
+        android:elevation="8dp"
+        android:layout_marginTop="100dp"
+        />
+
+
+    <!--Design of house cell 1 -->
+
+
+
+    <RelativeLayout
+        android:id="@+id/image_house1"
+        android:layout_width="270dp"
+        android:layout_height="175dp"
+        android:background="@drawable/house1pic"
+        android:elevation="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="215dp"
+        />
 
     <View
-        android:id="@+id/group_1"
+        android:id="@+id/house1"
         android:layout_width="300dp"
-        android:layout_height="250dp"
+        android:layout_height="275dp"
         android:layout_alignParentTop="true"
         android:layout_marginTop="200dp"
         android:layout_centerHorizontal="true"
         android:background="#ABD1F3"
         android:elevation="8dp"
-        android:layout_gravity="center"
-        android:radius="20dp"
         />
+
+    <Button
+        android:id="@+id/mort_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click Me"
+        android:background="#4C1492"
+        android:textColor="@color/white"
+        android:fontFamily="@font/inder"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="445dp"
+        android:elevation="20dp" />
+
+    <TextView
+        android:id="@+id/house1_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inder"
+        android:text="7765 Valley Quail Point,\nColorado Springs, CO 80907"
+        android:paddingLeft="60dp"
+        android:textColor="#4C1492"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:translationY="50dp"
+        android:elevation="8dp"
+        android:layout_marginTop="340dp"/>
+
+    <TextView
+        android:id="@+id/house1_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inder"
+        android:text="$285,000"
+        android:paddingLeft="60dp"
+        android:textColor="#4C1492"
+        android:textSize="16sp"
+        android:translationY="50dp"
+        android:elevation="8dp"
+        android:layout_marginTop="395dp"/>
+
+
+
+
+
+
+    <!--Design of house cell 2 -->
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/image_house2"
+        android:layout_width="270dp"
+        android:layout_height="175dp"
+        android:background="@drawable/house2pic"
+        android:elevation="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="515dp"
+        />
+
+    <View
+        android:id="@+id/house2"
+        android:layout_width="300dp"
+        android:layout_height="275dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="500dp"
+        android:layout_centerHorizontal="true"
+        android:background="#ABD1F3"
+        android:elevation="8dp"
+         />
+
+    <TextView
+        android:id="@+id/house2_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inder"
+        android:text="7765 Valley Quail Point,\nColorado Springs, CO 80922"
+        android:paddingLeft="60dp"
+        android:textColor="#4C1492"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:translationY="50dp"
+        android:elevation="8dp"
+        android:layout_marginTop="640dp"/>
+
+    <TextView
+        android:id="@+id/house2_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inder"
+        android:text="$220,000"
+        android:paddingLeft="60dp"
+        android:textColor="#4C1492"
+        android:textSize="16sp"
+        android:translationY="50dp"
+        android:elevation="8dp"
+        android:layout_marginTop="695dp"/>
+
+    <!--Design of house cell 3 -->
+    <RelativeLayout
+        android:id="@+id/image_house3"
+        android:layout_width="270dp"
+        android:layout_height="175dp"
+        android:background="@drawable/house3pic"
+        android:elevation="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="815dp"
+        />
+
+    <View
+        android:id="@+id/house3"
+        android:layout_width="300dp"
+        android:layout_height="275dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="800dp"
+        android:layout_centerHorizontal="true"
+        android:background="#ABD1F3"
+        android:elevation="8dp"
+         />
+
+    <TextView
+        android:id="@+id/house3_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inder"
+        android:text="2902 Airport Rd APT 107,\nColorado Springs, CO 80922"
+        android:paddingLeft="60dp"
+        android:textColor="#4C1492"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:translationY="50dp"
+        android:elevation="8dp"
+        android:layout_marginTop="940dp"/>
+
+    <TextView
+        android:id="@+id/house3_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inder"
+        android:text="$214,973"
+        android:paddingLeft="60dp"
+        android:textColor="#4C1492"
+        android:textSize="16sp"
+        android:translationY="50dp"
+        android:elevation="8dp"
+        android:layout_marginTop="995dp"/>
+
+
+
 
 
 </RelativeLayout>
