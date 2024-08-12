@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/home_page"
     android:layout_width="match_parent"
@@ -16,7 +16,7 @@
         android:background="#00FFFFFF"
         android:fontFamily="@font/inder"
         android:linksClickable="true"
-        android:text="@string/sign_out"
+        android:text="Sign Out"
         android:textColor="#4C1492"
         android:textColorLink="#4C1492"
         android:textSize="11sp"
@@ -27,27 +27,246 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:elevation="8dp"
         android:fontFamily="@font/inder"
         android:text="Welcome"
         android:textAlignment="center"
         android:textColor="#4C1492"
         android:textSize="48sp"
-        android:translationY="50dp"
-        android:elevation="8dp"
-        android:layout_gravity="center"/>
+        android:translationY="50dp" />
 
-    <View
-        android:id="@+id/group_1"
-        android:layout_width="300dp"
-        android:layout_height="250dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="200dp"
+    <TextView
+        android:id="@+id/perfectfit"
+        android:layout_width="243dp"
+        android:layout_height="56dp"
         android:layout_centerHorizontal="true"
-        android:background="#ABD1F3"
-        android:elevation="8dp"
-        android:layout_gravity="center"
-        android:radius="20dp"
-        />
+        android:fontFamily="@font/inder"
+        android:text="Let’s find the perfect fit for you "
+        android:textAlignment="center"
+        android:textColor="#4C1492"
+        android:textSize="20sp"
+        android:translationY="120dp" />
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="1000dp"
+        android:scrollIndicators="right"
+        android:translationY="200dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/group_1"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:background="#ABD1F3"
+                android:elevation="8dp">
+
+                <ImageView
+                    android:id="@+id/house1pic"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/house1"
+                    android:translationZ="10dp" />
+
+                <TextView
+                    android:id="@+id/house1address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="110dp"
+                    android:fontFamily="@font/inder"
+                    android:text="@string/house1address"
+                    android:textAlignment="textStart"
+                    android:textColor="#4C1492" />
+
+                <TextView
+                    android:id="@+id/house1city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="130dp"
+                    android:fontFamily="@font/inder"
+                    android:text="@string/house1city"
+                    android:textAlignment="textStart"
+                    android:textColor="#4C1492" />
+
+                <TextView
+                    android:id="@+id/house1price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="170dp"
+                    android:fontFamily="@font/inder"
+                    android:text="@string/house1price"
+                    android:textAlignment="textStart"
+                    android:textColor="#4C1492"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/goToCalculate1"
+                    android:layout_width="190dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="155dp"
+                    android:layout_marginTop="160dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="#4C1492"
+                    android:fontFamily="@font/inder"
+                    android:text="View Mortgage Details"
+                    android:textAlignment="center"
+                    android:textColor="#FEFEFE"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/group_2"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="225dp"
+                android:background="#ABD1F3"
+                android:elevation="8dp">
+
+                <ImageView
+                    android:id="@+id/house2pic"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/house2"
+                    android:translationZ="10dp" />
+
+                <TextView
+                    android:id="@+id/house2address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="110dp"
+                    android:fontFamily="@font/inder"
+                    android:text="@string/house2address"
+                    android:textAlignment="textStart"
+                    android:textColor="#4C1492" />
+
+                <TextView
+                    android:id="@+id/house2city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="130dp"
+                    android:fontFamily="@font/inder"
+                    android:text="@string/house2city"
+                    android:textAlignment="textStart"
+                    android:textColor="#4C1492" />
+
+                <TextView
+                    android:id="@+id/house2price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="170dp"
+                    android:fontFamily="@font/inder"
+                    android:text="@string/house2price"
+                    android:textAlignment="textStart"
+                    android:textColor="#4C1492"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/goToCalculate2"
+                    android:layout_width="190dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="155dp"
+                    android:layout_marginTop="160dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="#4C1492"
+                    android:fontFamily="@font/inder"
+                    android:text="View Mortgage Details"
+                    android:textAlignment="center"
+                    android:textColor="#FEFEFE"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/group_3"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="450dp"
+                android:background="#ABD1F3"
+                android:elevation="8dp">
+
+                <ImageView
+                    android:id="@+id/house3pic"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/house3"
+                    android:translationZ="10dp" />
+
+                <TextView
+                    android:id="@+id/house3address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="110dp"
+                    android:fontFamily="@font/inder"
+                    android:text="@string/house3address"
+                    android:textAlignment="textStart"
+                    android:textColor="#4C1492" />
+
+                <TextView
+                    android:id="@+id/house3city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="130dp"
+                    android:fontFamily="@font/inder"
+                    android:text="@string/house3city"
+                    android:textAlignment="textStart"
+                    android:textColor="#4C1492" />
+
+                <TextView
+                    android:id="@+id/house3price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="170dp"
+                    android:fontFamily="@font/inder"
+                    android:text="@string/house3price"
+                    android:textAlignment="textStart"
+                    android:textColor="#4C1492"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/goToCalculate3"
+                    android:layout_width="190dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="155dp"
+                    android:layout_marginTop="160dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="#4C1492"
+                    android:fontFamily="@font/inder"
+                    android:text="View Mortgage Details"
+                    android:textAlignment="center"
+                    android:textColor="#FEFEFE"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
 
 </RelativeLayout>
