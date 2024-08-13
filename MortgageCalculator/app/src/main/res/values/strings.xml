@@ -1,4 +1,16 @@
 <resources>
     <string name="app_name">Mortgage Calculator</string>
     <string name="hyperlink"><a href="https://secure.bankofamerica.com/auth/forgot/reset-entry/">Forgot Password?</a></string>
+
+    <string name="house1address">2803 N Cascade Ave</string>
+    <string name="house1city">Colorado Springs, CO 80907</string>
+    <string name="house1price">$285,000</string>
+
+    <string name="house2address">7765 Valley Quail Point</string>
+    <string name="house2city">Colorado Springs, CO 80907</string>
+    <string name="house2price">$220,000</string>
+
+    <string name="house3address">2902 Airport Rd APT 107</string>
+    <string name="house3city">Colorado Springs, CO 80910</string>
+    <string name="house3price">$214,973</string>
 </resources>
