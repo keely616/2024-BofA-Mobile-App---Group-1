@@ -49,13 +49,6 @@ class SecondActivity : ComponentActivity() {
     // Add button for signout
     private lateinit var signOutButton: Button
 
-    private lateinit var calculateButton1: Button
-
-    private lateinit var calculateButton2: Button
-
-    private lateinit var calculateButton3: Button
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second)
@@ -69,49 +62,26 @@ class SecondActivity : ComponentActivity() {
             // start the activity connect to the specified class
             startActivity(intent)
         }
-
-        calculateButton1 = findViewById(R.id.goToCalculate1)
-
-        calculateButton1.setOnClickListener {
-            val intent = Intent(this, ThirdActivity::class.java)
-            // start the activity connect to the specified class
-            startActivity(intent)
-        }
-
-        calculateButton2 = findViewById(R.id.goToCalculate2)
-
-        calculateButton2.setOnClickListener {
-            val intent = Intent(this, ThirdActivity::class.java)
-            // start the activity connect to the specified class
-            startActivity(intent)
-        }
-
-        calculateButton3 = findViewById(R.id.goToCalculate3)
-
-        calculateButton3.setOnClickListener {
-            val intent = Intent(this, ThirdActivity::class.java)
-            // start the activity connect to the specified class
-            startActivity(intent)
-        }
     }
 }
 
 class ThirdActivity : ComponentActivity() {
 
-    // Add button for signout
-//    private lateinit var homeButton: Button
+    // Add button for home
+    private lateinit var homeButton: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_third)
 
-//        homeButton = findViewById(R.id.home)
+        homeButton = findViewById(R.id.home_page)
 
         // Intents are objects of the android.content.Intent type. Your code can send them to the Android system defining
         // the components you are targeting. Intent to start an activity called SecondActivity with the following code.
-//        homeButton.setOnClickListener {
-//            val intent = Intent(this, SecondActivity::class.java)
+        homeButton.setOnClickListener {
+           val intent = Intent(this, SecondActivity::class.java)
             // start the activity connect to the specified class
-//            startActivity(intent)}
+            startActivity(intent)
+        }
     }
 }
