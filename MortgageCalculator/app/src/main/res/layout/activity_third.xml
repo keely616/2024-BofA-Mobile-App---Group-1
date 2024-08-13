@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/calculation"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F0E4FF"
+    android:background="#F6EFFF"
     tools:context=".ThirdActivity">
 
     <Button
@@ -98,12 +97,23 @@
         android:id="@+id/resultLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
         android:fontFamily="@font/inder"
         android:text="@string/result"
         android:textColor="#4C1492"
         android:textSize="20sp"
-        android:translationX="80dp"
         android:translationY="750dp" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/inder"
+        android:textAlignment="center"
+        android:textColor="#4C1492"
+        android:textSize="20sp"
+        android:translationY="790dp" />
 
     <EditText
         android:id="@+id/editPrice"
@@ -117,9 +127,9 @@
         android:ems="10"
         android:fontFamily="@font/inder"
         android:inputType="numberDecimal"
+        android:text="@string/insert_price"
         android:textAlignment="textStart"
-        android:textColor="#878484"
-        android:text="@string/insert_price"/>
+        android:textColor="#878484" />
 
     <EditText
         android:id="@+id/editInterest"
@@ -133,9 +143,9 @@
         android:ems="10"
         android:fontFamily="@font/inder"
         android:inputType="numberDecimal"
+        android:text="@string/insert_interest"
         android:textAlignment="textStart"
-        android:textColor="#878484"
-        android:text="@string/insert_interest"/>
+        android:textColor="#878484" />
 
     <EditText
         android:id="@+id/editDownPayment"

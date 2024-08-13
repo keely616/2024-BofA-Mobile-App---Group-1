@@ -120,6 +120,7 @@ class ThirdActivity : ComponentActivity() {
     private lateinit var homeButton: Button
     private lateinit var calculate: Button
 
+    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_third)
@@ -141,7 +142,7 @@ class ThirdActivity : ComponentActivity() {
         val dp = findViewById<EditText>(R.id.editDownPayment).text.toString().toDouble()
         val loan = findViewById<EditText>(R.id.editLoanAmount).text.toString().toDouble()
         val n = findViewById<Spinner>(R.id.duration).selectedItem.toString().toDouble()
-        val result = findViewById<TextView>(R.id.resultLabel)
+        val result = findViewById<TextView>(R.id.result)
         val i = (1+r).pow(12*n).toString().toDouble()
         val principal = p - dp
 
@@ -153,7 +154,7 @@ class ThirdActivity : ComponentActivity() {
         calculate = findViewById(R.id.calculate)
 
         calculate.setOnClickListener {
-            result.text = m
+            result.text = "$" + m
         }
 
     }
