@@ -2,6 +2,19 @@
     <string name="app_name">Mortgage Calculator</string>
     <string name="hyperlink"><a href="https://secure.bankofamerica.com/auth/forgot/reset-entry/">Forgot Password?</a></string>
 
+    <string name="house1address">Address 1</string>
+    <string name="house2address">Address 2</string>
+    <string name="house3address">Address 3</string>
+
+    <string name="house1city">City 1</string>
+    <string name="house2city">City 2</string>
+    <string name="house3city">City 3</string>
+
+    <string name="house1price">Price 1</string>
+    <string name="house2price">Price 2</string>
+    <string name="house3price">Price 3</string>
+
+
     <string name="price">Home Price</string>
     <string name="interest_rate">Current Interest Rate</string>
     <string name="down_payment">Down Payment Amount</string>
