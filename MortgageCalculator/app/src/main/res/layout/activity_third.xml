@@ -117,9 +117,9 @@
         android:ems="10"
         android:fontFamily="@font/inder"
         android:inputType="numberDecimal"
-        android:text="@string/insert_price"
         android:textAlignment="textStart"
-        android:textColor="#878484" />
+        android:textColor="#878484"
+        android:text="@string/insert_price"/>
 
     <EditText
         android:id="@+id/editInterest"
@@ -133,9 +133,9 @@
         android:ems="10"
         android:fontFamily="@font/inder"
         android:inputType="numberDecimal"
-        android:text="@string/insert_interest"
         android:textAlignment="textStart"
-        android:textColor="#878484" />
+        android:textColor="#878484"
+        android:text="@string/insert_interest"/>
 
     <EditText
         android:id="@+id/editDownPayment"

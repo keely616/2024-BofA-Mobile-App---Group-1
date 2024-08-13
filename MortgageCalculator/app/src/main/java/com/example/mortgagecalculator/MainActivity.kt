@@ -118,7 +118,6 @@ class ThirdActivity : ComponentActivity() {
 
     // Add button for home
     private lateinit var homeButton: Button
-
     private lateinit var calculate: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -135,20 +134,16 @@ class ThirdActivity : ComponentActivity() {
             startActivity(intent)
         }
 
-        val price = findViewById<EditText>(R.id.editPrice)
-        val interestRate = findViewById<EditText>(R.id.editInterest)
-        val downpayment = findViewById<EditText>(R.id.editDownPayment)
-        var loanAmount = findViewById<EditText>(R.id.editLoanAmount)
-        val duration = findViewById<Spinner>(R.id.duration)
+        val p = findViewById<EditText>(R.id.editPrice).text.toString().toDouble()
+        var r = findViewById<EditText>(R.id.editInterest).text.toString().toDouble()
+        r /= 100
+        r /= 12
+        val dp = findViewById<EditText>(R.id.editDownPayment).text.toString().toDouble()
+        val loan = findViewById<EditText>(R.id.editLoanAmount).text.toString().toDouble()
+        val n = findViewById<Spinner>(R.id.duration).selectedItem.toString().toDouble()
         val result = findViewById<TextView>(R.id.resultLabel)
-
-        val p = price.text.toString().toDouble()
-        val r = (interestRate.text.toString().toDouble() / 100) / 12
-        val dp = downpayment.text.toString().toDouble()
-        val principal = p-dp
-        loanAmount.setText(principal.toString())
-        val n = 12 * duration.selectedItem.toString().toDouble()
-        val i = (1+r).pow(n).toString().toDouble()
+        val i = (1+r).pow(12*n).toString().toDouble()
+        val principal = p - dp
 
         @SuppressLint("DefaultLocale")
         val m = String.format("%.2f", (principal*r*i)/(i-1))
