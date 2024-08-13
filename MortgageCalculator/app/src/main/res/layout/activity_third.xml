@@ -8,4 +8,217 @@
     android:background="#F0E4FF"
     tools:context=".ThirdActivity">
 
+    <!-- Mortgage Calculator Title-->
+    <TextView
+        android:id="@+id/title_mortCalc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/inder"
+        android:text="Mortgage\nCalculator"
+        android:textColor="#4C1492"
+        android:textSize="48sp"
+        android:translationY="50dp"
+        android:elevation="8dp"
+        />
+
+    <!-- Input Cells and Labels-->
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- House Price Label  -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home Price"
+            android:textSize="16sp"
+            android:layout_marginTop="200dp"
+            android:fontFamily="@font/inder"
+            android:textColor="#4C1492"
+            android:letterSpacing="0.1"
+            android:paddingStart="65dp"
+            />
+
+        <!-- House Price input for user -->
+        <EditText
+            android:id="@+id/Price_Input"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="$00.00"
+            android:background="@color/white"
+            android:padding="7dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/inder"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            />
+
+
+        <!-- Current Interest Rate Label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Interest Rate"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/inder"
+            android:textColor="#4C1492"
+            android:letterSpacing="0.1"
+            android:paddingStart="65dp"
+            />
+
+        <!-- Current Interest Rate input for user -->
+        <EditText
+            android:id="@+id/Current_Int_Rate_Input"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="6.75%"
+            android:background="@color/white"
+            android:padding="7dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/inder"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            />
+
+        <!-- Down Payment Amount Label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Down Payment Amount"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/inder"
+            android:textColor="#4C1492"
+            android:letterSpacing="0.1"
+            android:paddingStart="65dp"
+            />
+
+        <!-- Down Payment Amount input for user -->
+        <EditText
+            android:id="@+id/Down_Payment_Amount"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="$00.00"
+            android:background="@color/white"
+            android:padding="7dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/inder"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            />
+
+        <!-- Loan Amount Label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loan Amount"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/inder"
+            android:textColor="#4C1492"
+            android:letterSpacing="0.1"
+            android:paddingStart="65dp"
+            />
+
+        <!-- Loan Amount input for user -->
+        <EditText
+            android:id="@+id/Loan_Amount"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="$00.00"
+            android:background="@color/white"
+            android:padding="7dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/inder"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            />
+
+        <!-- Loan Duration Label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loan Duration (years)"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/inder"
+            android:textColor="#4C1492"
+            android:letterSpacing="0.1"
+            android:paddingStart="65dp"
+            />
+
+        <!-- Loan Duration input for user -->
+        <EditText
+            android:id="@+id/Loan_Duration"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="0"
+            android:background="@color/white"
+            android:padding="7dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/inder"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            />
+
+        <!-- Monthly Mortgage Payment Label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monthly Mortgage Payment"
+            android:textSize="16sp"
+            android:layout_marginTop="90dp"
+            android:fontFamily="@font/inder"
+            android:textColor="#4C1492"
+            android:letterSpacing="0.1"
+            android:paddingStart="65dp"
+            android:textStyle="bold"
+            />
+
+        <!-- Monthly Mortgage Payment input for user -->
+        <EditText
+            android:id="@+id/Monthly_Mortgage_Payment"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="$00.00"
+            android:background="@color/white"
+            android:padding="7dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/inder"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            />
+
+
+    </LinearLayout>
+    <!-- Button to calculate -->
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:layout_gravity="center"
+        android:layout_marginTop="570dp"
+        android:fontFamily="@font/inder"
+        />
+
+
+
+
+
+
+
 </RelativeLayout>
+
