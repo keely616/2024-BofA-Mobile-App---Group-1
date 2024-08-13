@@ -1,13 +1,18 @@
 package com.example.mortgagecalculator
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
 import android.widget.Button
 import android.widget.TextView
 import androidx.activity.ComponentActivity
 import android.text.method.LinkMovementMethod
 import android.widget.EditText
 import android.widget.Spinner
+import java.math.RoundingMode
+import java.text.DecimalFormat
 import android.widget.Toast
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -105,17 +110,36 @@ class ThirdActivity : ComponentActivity() {
 
     private lateinit var calculate: Button
 
-    private lateinit var price: EditText
+    private var price = findViewById<EditText>(R.id.editPrice)
+    private var interestRate = findViewById<EditText>(R.id.editInterest)
+    private var downpayment = findViewById<EditText>(R.id.editDownPayment)
+    private var loanAmount = findViewById<EditText>(R.id.editLoanAmount)
+    private var duration = findViewById<Spinner>(R.id.duration)
+    private var result = findViewById<TextView>(R.id.resultLabel)
 
-    private lateinit var interestRate: EditText
+    private val p = price.text.toString().toDouble()
+    private val r = interestRate.text.toString().toDouble() / 100
+    private val dp = downpayment.text.toString().toDouble()
+    private var principal = p-dp
+    private val n = 12 * duration.selectedItem.toString().toDouble()
 
-    private lateinit var downpayment: EditText
+    @SuppressLint("DefaultLocale")
+    val m = String.format("%.2f", (principal*r*(1+r)*n)/((1+r)*n-1)).toDouble()
 
-    private lateinit var loanAmount: EditText
+    private var textWatcher: TextWatcher = object : TextWatcher {
+        override fun beforeTextChanged(s: CharSequence, start: Int, count: Int, after: Int) {
+            // this function is called before text is edited
+        }
 
-    private lateinit var duration: Spinner
+        override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
+            // this function is called when text is edited
+        }
 
-    private lateinit var result: TextView
+        override fun afterTextChanged(s: Editable) {
+            // this function is called after text is edited
+            loanAmount.setText(m.toString())
+        }
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -131,27 +155,12 @@ class ThirdActivity : ComponentActivity() {
             startActivity(intent)
         }
 
-        price = findViewById(R.id.editPrice)
-        val p = price.text.toString().toDouble()
-
-        interestRate = findViewById(R.id.editInterest)
-        val r = interestRate.text.toString().toDouble()
-
-        downpayment = findViewById(R.id.editDownPayment)
-        val dp = downpayment.text.toString().toDouble()
-
-        val principal = p - dp
-        loanAmount.setText(principal.toString())
-
-        duration = findViewById(R.id.duration)
-        val n = 12 * duration.selectedItem.toString().toDouble()
-
-        val m = (principal*r*(1+r)*n)/((1+r)*n-1)
+        downpayment.addTextChangedListener(textWatcher)
 
         calculate = findViewById(R.id.calculate)
 
         calculate.setOnClickListener {
-            Toast.makeText(this, m.toString(), Toast.LENGTH_SHORT).show()
+            result.text = m.toString()
         }
 
 
