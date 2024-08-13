@@ -67,21 +67,21 @@ class SecondActivity : ComponentActivity() {
 
 class ThirdActivity : ComponentActivity() {
 
-    // Add button for signout
-//    private lateinit var homeButton: Button
+    // Add button for home
+    private lateinit var homeButton: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_third)
 
-//        homeButton = findViewById(R.id.home)
+        homeButton = findViewById(R.id.home_page)
 
         // Intents are objects of the android.content.Intent type. Your code can send them to the Android system defining
         // the components you are targeting. Intent to start an activity called SecondActivity with the following code.
-//        homeButton.setOnClickListener {
-//            val intent = Intent(this, SecondActivity::class.java)
+        homeButton.setOnClickListener {
+           val intent = Intent(this, SecondActivity::class.java)
             // start the activity connect to the specified class
-//            startActivity(intent)
+            startActivity(intent)
         }
     }
 }

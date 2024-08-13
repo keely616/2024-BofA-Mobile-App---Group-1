@@ -8,4 +8,175 @@
     android:background="#F0E4FF"
     tools:context=".ThirdActivity">
 
+    <Button
+        android:id="@+id/home_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/purple_200"
+        android:backgroundTint="#00FFFFFF"
+        android:fontFamily="@font/inder"
+        android:stateListAnimator="@null"
+        android:text="@string/home"
+        android:textAllCaps="false"
+        android:textColor="#311B92"
+        android:textSize="14sp"
+        android:typeface="normal" />
+
+    <TextView
+        android:id="@+id/app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/inder"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textColor="#4C1492"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:translationY="52dp" />
+
+    <TextView
+        android:id="@+id/homePriceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inder"
+        android:text="@string/price"
+        android:textColor="#4C1492"
+        android:textSize="20sp"
+        android:translationX="80dp"
+        android:translationY="200dp" />
+
+    <TextView
+        android:id="@+id/interestLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inder"
+        android:text="@string/interest_rate"
+        android:textColor="#4C1492"
+        android:textSize="20sp"
+        android:translationX="80dp"
+        android:translationY="285dp" />
+
+    <TextView
+        android:id="@+id/downPaymentLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inder"
+        android:text="@string/down_payment"
+        android:textColor="#4C1492"
+        android:textSize="20sp"
+        android:translationX="80dp"
+        android:translationY="370dp" />
+
+    <TextView
+        android:id="@+id/loanAmountLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inder"
+        android:text="@string/loan_amount"
+        android:textColor="#4C1492"
+        android:textSize="20sp"
+        android:translationX="80dp"
+        android:translationY="455dp" />
+
+    <TextView
+        android:id="@+id/loanDurationLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inder"
+        android:text="@string/time"
+        android:textColor="#4C1492"
+        android:textSize="20sp"
+        android:translationX="80dp"
+        android:translationY="540dp" />
+
+    <TextView
+        android:id="@+id/resultLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inder"
+        android:text="@string/result"
+        android:textColor="#4C1492"
+        android:textSize="20sp"
+        android:translationX="80dp"
+        android:translationY="750dp" />
+
+    <EditText
+        android:id="@+id/editPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="235dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:fontFamily="@font/inder"
+        android:inputType="numberDecimal"
+        android:text="@string/insert_price"
+        android:textAlignment="textStart"
+        android:textColor="#878484" />
+
+    <EditText
+        android:id="@+id/editInterest"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="320dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:fontFamily="@font/inder"
+        android:inputType="numberDecimal"
+        android:text="@string/insert_interest"
+        android:textAlignment="textStart"
+        android:textColor="#878484" />
+
+    <EditText
+        android:id="@+id/editDownPayment"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="405dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:fontFamily="@font/inder"
+        android:inputType="numberDecimal"
+        android:text="@string/insert_downpayment"
+        android:textAlignment="textStart"
+        android:textColor="#878484" />
+
+    <EditText
+        android:id="@+id/editLoanAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="490dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:fontFamily="@font/inder"
+        android:inputType="numberDecimal"
+        android:text="@string/insert_loan"
+        android:textAlignment="textStart"
+        android:textColor="#878484" />
+
+    <Spinner
+        android:id="@+id/time_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="215dp"
+        android:layout_marginBottom="290dp" />
+
+
 </RelativeLayout>

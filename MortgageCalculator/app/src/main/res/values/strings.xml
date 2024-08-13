@@ -1,4 +1,23 @@
 <resources>
     <string name="app_name">Mortgage Calculator</string>
     <string name="hyperlink"><a href="https://secure.bankofamerica.com/auth/forgot/reset-entry/">Forgot Password?</a></string>
+
+    <string name="price">Home Price</string>
+    <string name="interest_rate">Current Interest Rate</string>
+    <string name="down_payment">Down Payment Amount</string>
+    <string name="loan_amount">Loan Amount</string>
+    <string name="time">Loan Duration</string>
+    <string name="home">Home</string>
+    <string name="result">Monthly Mortgage Payment</string>
+    <string name="insert_price"> $00.00 </string>
+    <string name="insert_interest"> 00.00% </string>
+    <string name="insert_downpayment"> $00.00 </string>
+    <string name="insert_loan"> $00.00 </string>
+    <string-array name="time_array">
+        <item>10 years</item>
+        <item>15 years</item>
+        <item>20 years</item>
+        <item>25 years</item>
+        <item>30 years</item>
+    </string-array>
 </resources>
