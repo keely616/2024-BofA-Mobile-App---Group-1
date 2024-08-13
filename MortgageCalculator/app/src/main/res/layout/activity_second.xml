@@ -7,21 +7,23 @@
     android:layout_height="1200dp"
     android:background="#F0E4FF"
     tools:context=".SecondActivity">
-
+  
     <Button
         android:id="@+id/sign_out"
         android:layout_width="wrap_content"
-        android:layout_height="11dp"
-        android:autoLink="web"
-        android:background="#00FFFFFF"
+        android:layout_height="wrap_content"
+        android:textSize="10dp"
+        android:background="#ABD1F3"
         android:fontFamily="@font/inder"
         android:linksClickable="true"
         android:text="Sign Out"
         android:textColor="#4C1492"
         android:textColorLink="#4C1492"
-        android:textSize="11sp"
-        android:translationY="20dp" />
+         />
 
+
+
+    <!-- Shows text that welcome and greet user -->
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
@@ -31,10 +33,11 @@
         android:elevation="8dp"
         android:fontFamily="@font/inder"
         android:text="Welcome"
-        android:textAlignment="center"
         android:textColor="#4C1492"
         android:textSize="48sp"
-        android:translationY="50dp" />
+        android:translationY="50dp"
+        android:elevation="8dp"
+        />
 
     <TextView
         android:id="@+id/perfectfit"
