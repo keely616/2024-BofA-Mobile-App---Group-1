@@ -5,22 +5,19 @@
     android:id="@+id/home_page"
     android:layout_width="match_parent"
     android:layout_height="1200dp"
-    android:background="#F0E4FF"
+    android:background="#F6EFFF"
     tools:context=".SecondActivity">
-  
+
     <Button
         android:id="@+id/sign_out"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="10dp"
-        android:background="#ABD1F3"
+        android:background="#F6EFFF"
         android:fontFamily="@font/inder"
         android:linksClickable="true"
         android:text="Sign Out"
         android:textColor="#4C1492"
-        android:textColorLink="#4C1492"
-         />
-
+        android:textSize="11sp" />
 
 
     <!-- Shows text that welcome and greet user -->
@@ -35,9 +32,7 @@
         android:text="Welcome"
         android:textColor="#4C1492"
         android:textSize="48sp"
-        android:translationY="50dp"
-        android:elevation="8dp"
-        />
+        android:translationY="50dp" />
 
     <TextView
         android:id="@+id/perfectfit"

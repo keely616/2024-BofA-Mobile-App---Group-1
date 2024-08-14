@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/calculation"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F0E4FF"
+    android:background="#F6EFFF"
     tools:context=".ThirdActivity">
 
     <Button
@@ -98,12 +97,23 @@
         android:id="@+id/resultLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
         android:fontFamily="@font/inder"
         android:text="@string/result"
         android:textColor="#4C1492"
         android:textSize="20sp"
-        android:translationX="80dp"
         android:translationY="750dp" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/inder"
+        android:textAlignment="center"
+        android:textColor="#4C1492"
+        android:textSize="20sp"
+        android:translationY="790dp" />
 
     <EditText
         android:id="@+id/editPrice"
@@ -170,13 +180,24 @@
         android:textColor="#878484" />
 
     <Spinner
-        android:id="@+id/time_spinner"
+        android:id="@+id/duration"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="215dp"
-        android:layout_marginBottom="290dp" />
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="575dp"
+        android:entries="@array/time_array" />
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="#ABD1F3"
+        android:fontFamily="@font/inder"
+        android:text="Calculate"
+        android:textColor="#4C1492"
+        android:textColorLink="#4C1492"
+        android:translationY="650dp" />
 
 
 </RelativeLayout>

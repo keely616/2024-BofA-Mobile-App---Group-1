@@ -2,35 +2,31 @@
     <string name="app_name">Mortgage Calculator</string>
     <string name="hyperlink"><a href="https://secure.bankofamerica.com/auth/forgot/reset-entry/">Forgot Password?</a></string>
 
-    <string name="house1address">Address 1</string>
-    <string name="house2address">Address 2</string>
-    <string name="house3address">Address 3</string>
+    <string name="house1address">2803 N Cascade Ave</string>
+    <string name="house1city">Colorado Springs, CO 80907</string>
+    <string name="house1price">$285,000</string>
 
-    <string name="house1city">City 1</string>
-    <string name="house2city">City 2</string>
-    <string name="house3city">City 3</string>
+    <string name="house2address">7765 Valley Quail Point</string>
+    <string name="house2city">Colorado Springs, CO 80907</string>
+    <string name="house2price">$220,000</string>
 
-    <string name="house1price">Price 1</string>
-    <string name="house2price">Price 2</string>
-    <string name="house3price">Price 3</string>
-
+    <string name="house3address">2902 Airport Rd APT 107</string>
+    <string name="house3city">Colorado Springs, CO 80910</string>
+    <string name="house3price">$214,973</string>
 
     <string name="price">Home Price</string>
     <string name="interest_rate">Current Interest Rate</string>
     <string name="down_payment">Down Payment Amount</string>
     <string name="loan_amount">Loan Amount</string>
-    <string name="time">Loan Duration</string>
+    <string name="time">Loan Duration (in years)</string>
     <string name="home">Home</string>
     <string name="result">Monthly Mortgage Payment</string>
-    <string name="insert_price"> $00.00 </string>
-    <string name="insert_interest"> 00.00% </string>
-    <string name="insert_downpayment"> $00.00 </string>
-    <string name="insert_loan"> $00.00 </string>
+    <string name="insert_price">285000</string>
+    <string name="insert_interest">6.375</string>
+    <string name="insert_downpayment">70000</string>
+    <string name="insert_loan">215000</string>
     <string-array name="time_array">
-        <item>10 years</item>
-        <item>15 years</item>
-        <item>20 years</item>
-        <item>25 years</item>
-        <item>30 years</item>
+        <item>15</item>
+        <item>30</item>
     </string-array>
 </resources>
