@@ -9,6 +9,7 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.activity.ComponentActivity
 import android.text.method.LinkMovementMethod
+import android.widget.ArrayAdapter
 import android.widget.EditText
 import android.widget.Spinner
 import java.math.RoundingMode
@@ -135,28 +136,36 @@ class ThirdActivity : ComponentActivity() {
             startActivity(intent)
         }
 
-        val p = findViewById<EditText>(R.id.editPrice).text.toString().toDouble()
-        var r = findViewById<EditText>(R.id.editInterest).text.toString().toDouble()
-        r /= 100
-        r /= 12
-        val dp = findViewById<EditText>(R.id.editDownPayment).text.toString().toDouble()
-        val loan = findViewById<EditText>(R.id.editLoanAmount).text.toString().toDouble()
-        val n = findViewById<Spinner>(R.id.duration).selectedItem.toString().toDouble()
-        val result = findViewById<TextView>(R.id.result)
-        val i = (1+r).pow(12*n).toString().toDouble()
-        val principal = p - dp
-
-        @SuppressLint("DefaultLocale")
-        val m = String.format("%.2f", (principal*r*i)/(i-1))
-
-//        downpayment.addTextChangedListener(textWatcher)
-
-        calculate = findViewById(R.id.calculate)
-
-        calculate.setOnClickListener {
-            result.text = "$" + m
+        val spinnerTime : Spinner = findViewById(R.id.duration)
+        ArrayAdapter.createFromResource(
+            this,
+            R.array.time_array,
+            android.R.layout.simple_spinner_item
+        ).also { adapter ->
+            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+            spinnerTime.adapter = adapter
         }
 
+        val result = findViewById<TextView>(R.id.result)
+        calculate = findViewById(R.id.calculate)
+        calculate.setOnClickListener {
+            val p = findViewById<EditText>(R.id.editPrice).text.toString().toDoubleOrNull() ?: 0.0
+            var r = findViewById<EditText>(R.id.editInterest).text.toString().toDoubleOrNull() ?: 0.0
+            r /= 100
+            r /= 12
+            val dp = findViewById<EditText>(R.id.editDownPayment).text.toString().toDoubleOrNull() ?: 0.0
+            val loan = findViewById<EditText>(R.id.editLoanAmount).text.toString().toDoubleOrNull() ?: 0.0
+            val n = findViewById<Spinner>(R.id.duration).selectedItem.toString().toDoubleOrNull() ?: 0.0
+
+            val i = (1 + r).pow(12 * n).toString().toDouble()
+            val principal = p - dp
+
+            @SuppressLint("DefaultLocale")
+            val m = String.format("%.2f", (principal * r * i) / (i - 1))
+
+//        downpayment.addTextChangedListener(textWatcher)
+            result.text = "$" + m
+        }
     }
 
 //    private var textWatcher: TextWatcher = object : TextWatcher {
