@@ -24,7 +24,9 @@
 
     <!-- Input Cells and Labels-->
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <!-- Button to calculate -->
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -34,190 +36,180 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Home Price"
-            android:textSize="16sp"
             android:layout_marginTop="200dp"
             android:fontFamily="@font/inder"
-            android:textColor="#4C1492"
             android:letterSpacing="0.1"
-            android:paddingStart="65dp"
-            />
+            android:layout_marginLeft="65dp"
+            android:text="Home Price"
+            android:textColor="#4C1492"
+            android:textSize="16sp" />
 
         <!-- House Price input for user -->
         <EditText
             android:id="@+id/Price_Input"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:inputType="numberDecimal"
-            android:hint="$00.00"
-            android:background="@color/white"
-            android:padding="7dp"
-            android:layout_marginTop="5dp"
-            android:fontFamily="@font/inder"
             android:layout_gravity="center"
-            android:textSize="16sp"
-            />
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:fontFamily="@font/inder"
+            android:hint="$00.00"
+            android:inputType="numberDecimal"
+            android:padding="7dp"
+            android:textSize="16sp" />
 
 
         <!-- Current Interest Rate Label -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Current Interest Rate"
-            android:textSize="16sp"
             android:layout_marginTop="10dp"
             android:fontFamily="@font/inder"
-            android:textColor="#4C1492"
             android:letterSpacing="0.1"
-            android:paddingStart="65dp"
-            />
+            android:layout_marginLeft="65dp"
+            android:text="Current Interest Rate (%)"
+            android:textColor="#4C1492"
+            android:textSize="16sp" />
 
-        <!-- Current Interest Rate input for user -->
+        <!-- Current Interest Rate for user -->
         <EditText
-            android:id="@+id/Current_Int_Rate_Input"
+            android:id="@+id/Down_Payment_Amount"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:inputType="numberDecimal"
-            android:hint="6.75%"
-            android:background="@color/white"
-            android:padding="7dp"
-            android:layout_marginTop="5dp"
-            android:fontFamily="@font/inder"
             android:layout_gravity="center"
-            android:textSize="16sp"
-            />
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:fontFamily="@font/inder"
+            android:hint="6.78"
+            android:inputType="numberDecimal"
+            android:padding="7dp"
+            android:textSize="16sp" />
 
         <!-- Down Payment Amount Label -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Down Payment Amount"
-            android:textSize="16sp"
             android:layout_marginTop="10dp"
             android:fontFamily="@font/inder"
-            android:textColor="#4C1492"
             android:letterSpacing="0.1"
-            android:paddingStart="65dp"
-            />
+            android:layout_marginLeft="65dp"
+            android:text="Down Payment Amount"
+            android:textColor="#4C1492"
+            android:textSize="16sp" />
 
         <!-- Down Payment Amount input for user -->
         <EditText
             android:id="@+id/Down_Payment_Amount"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:inputType="numberDecimal"
-            android:hint="$00.00"
-            android:background="@color/white"
-            android:padding="7dp"
-            android:layout_marginTop="5dp"
-            android:fontFamily="@font/inder"
             android:layout_gravity="center"
-            android:textSize="16sp"
-            />
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:fontFamily="@font/inder"
+            android:hint="$00.00"
+            android:inputType="numberDecimal"
+            android:padding="7dp"
+            android:textSize="16sp" />
 
         <!-- Loan Amount Label -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Loan Amount"
-            android:textSize="16sp"
             android:layout_marginTop="10dp"
             android:fontFamily="@font/inder"
-            android:textColor="#4C1492"
             android:letterSpacing="0.1"
-            android:paddingStart="65dp"
-            />
+            android:layout_marginLeft="65dp"
+            android:text="Loan Amount"
+            android:textColor="#4C1492"
+            android:textSize="16sp" />
 
         <!-- Loan Amount input for user -->
         <EditText
             android:id="@+id/Loan_Amount"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:inputType="numberDecimal"
-            android:hint="$00.00"
-            android:background="@color/white"
-            android:padding="7dp"
-            android:layout_marginTop="5dp"
-            android:fontFamily="@font/inder"
             android:layout_gravity="center"
-            android:textSize="16sp"
-            />
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:fontFamily="@font/inder"
+            android:hint="$00.00"
+            android:inputType="numberDecimal"
+            android:padding="7dp"
+            android:textSize="16sp" />
 
         <!-- Loan Duration Label -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Loan Duration (years)"
-            android:textSize="16sp"
             android:layout_marginTop="10dp"
             android:fontFamily="@font/inder"
-            android:textColor="#4C1492"
             android:letterSpacing="0.1"
-            android:paddingStart="65dp"
-            />
+            android:layout_marginLeft="65dp"
+            android:text="Loan Duration (years)"
+            android:textColor="#4C1492"
+            android:textSize="16sp" />
 
         <!-- Loan Duration input for user -->
         <EditText
             android:id="@+id/Loan_Duration"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:inputType="numberDecimal"
-            android:hint="0"
-            android:background="@color/white"
-            android:padding="7dp"
-            android:layout_marginTop="5dp"
-            android:fontFamily="@font/inder"
             android:layout_gravity="center"
-            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:fontFamily="@font/inder"
+            android:hint="0"
+            android:inputType="numberDecimal"
+            android:padding="7dp"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/calculateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/inder"
+            android:text="Calculate"
+            android:layout_marginTop="20dp"
+            android:background="#4C1492"
+            android:textColor="@color/white"
+
             />
 
         <!-- Monthly Mortgage Payment Label -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Monthly Mortgage Payment"
-            android:textSize="16sp"
-            android:layout_marginTop="90dp"
+            android:layout_marginTop="20dp"
             android:fontFamily="@font/inder"
-            android:textColor="#4C1492"
             android:letterSpacing="0.1"
-            android:paddingStart="65dp"
-            android:textStyle="bold"
-            />
+            android:layout_marginLeft="65dp"
+            android:text="Monthly Mortgage Payment"
+            android:textColor="#4C1492"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
 
         <!-- Monthly Mortgage Payment input for user -->
         <EditText
             android:id="@+id/Monthly_Mortgage_Payment"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:inputType="numberDecimal"
-            android:hint="$00.00"
-            android:background="@color/white"
-            android:padding="7dp"
-            android:layout_marginTop="5dp"
-            android:fontFamily="@font/inder"
             android:layout_gravity="center"
-            android:textSize="20sp"
-            />
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:fontFamily="@font/inder"
+            android:hint="$00.00"
+            android:inputType="numberDecimal"
+            android:padding="7dp"
+            android:textSize="20sp" />
+
+
+
+
 
 
     </LinearLayout>
-    <!-- Button to calculate -->
-
-    <Button
-        android:id="@+id/calculateButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Calculate"
-        android:layout_gravity="center"
-        android:layout_marginTop="570dp"
-        android:fontFamily="@font/inder"
-        />
-
-
-
-
-
 
 
 </RelativeLayout>

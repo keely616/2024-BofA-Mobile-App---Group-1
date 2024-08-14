@@ -38,7 +38,7 @@
         android:text="Login"
         android:textColor="#4C1492"
         android:textColorLink="#4C1492"
-        android:translationY="700dp" />
+        android:translationY="665dp" />
 
     <EditText
         android:id="@+id/editEmail"
