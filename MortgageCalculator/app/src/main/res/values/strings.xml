@@ -14,6 +14,8 @@
     <string name="house3city">Colorado Springs, CO 80910</string>
     <string name="house3price">$214,973</string>
 
+
+    <string name="selected_address">No Home Selected</string>
     <string name="price">Home Price</string>
     <string name="interest_rate">Current Interest Rate</string>
     <string name="down_payment">Down Payment Amount</string>

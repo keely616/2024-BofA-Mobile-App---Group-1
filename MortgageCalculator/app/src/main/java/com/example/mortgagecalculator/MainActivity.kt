@@ -87,6 +87,9 @@ class SecondActivity : ComponentActivity() {
             // start the activity connect to the specified class
             startActivity(intent)
 
+            val addressSelected = findViewById<TextView>(R.id.editAddress)
+            addressSelected.setText(/* text = */ "2803 N Cascade Ave, Colorado Springs, CO 80907")
+
             val homePrice = findViewById<EditText>(R.id.editPrice)
             homePrice.setText("285000").toString().toDouble()
         }

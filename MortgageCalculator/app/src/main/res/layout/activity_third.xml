@@ -39,6 +39,19 @@
         android:translationY="52dp" />
 
     <TextView
+        android:id="@+id/editAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@color/purple"
+        android:fontFamily="@font/inder"
+        android:padding="5dp"
+        android:text="@string/selected_address"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:translationY="175dp"/>
+
+    <TextView
         android:id="@+id/homePriceLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -47,7 +60,7 @@
         android:textColor="#4C1492"
         android:textSize="20sp"
         android:translationX="80dp"
-        android:translationY="200dp" />
+        android:translationY="220dp" />
 
     <TextView
         android:id="@+id/interestLabel"
@@ -58,7 +71,7 @@
         android:textColor="#4C1492"
         android:textSize="20sp"
         android:translationX="80dp"
-        android:translationY="285dp" />
+        android:translationY="305dp" />
 
     <TextView
         android:id="@+id/downPaymentLabel"
@@ -69,7 +82,7 @@
         android:textColor="#4C1492"
         android:textSize="20sp"
         android:translationX="80dp"
-        android:translationY="370dp" />
+        android:translationY="390dp" />
 
     <TextView
         android:id="@+id/loanAmountLabel"
@@ -80,7 +93,7 @@
         android:textColor="#4C1492"
         android:textSize="20sp"
         android:translationX="80dp"
-        android:translationY="455dp" />
+        android:translationY="475dp" />
 
     <TextView
         android:id="@+id/loanDurationLabel"
@@ -91,7 +104,7 @@
         android:textColor="#4C1492"
         android:textSize="20sp"
         android:translationX="80dp"
-        android:translationY="540dp" />
+        android:translationY="560dp" />
 
     <TextView
         android:id="@+id/resultLabel"
@@ -122,7 +135,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="80dp"
-        android:layout_marginTop="235dp"
+        android:layout_marginTop="255dp"
         android:background="#FFFFFF"
         android:ems="10"
         android:fontFamily="@font/inder"
@@ -138,7 +151,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="80dp"
-        android:layout_marginTop="320dp"
+        android:layout_marginTop="340dp"
         android:background="#FFFFFF"
         android:ems="10"
         android:fontFamily="@font/inder"
@@ -154,7 +167,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="80dp"
-        android:layout_marginTop="405dp"
+        android:layout_marginTop="425dp"
         android:background="#FFFFFF"
         android:ems="10"
         android:fontFamily="@font/inder"
@@ -170,7 +183,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="80dp"
-        android:layout_marginTop="490dp"
+        android:layout_marginTop="510dp"
         android:background="#FFFFFF"
         android:ems="10"
         android:fontFamily="@font/inder"
@@ -183,8 +196,9 @@
         android:id="@+id/duration"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/inder"
         android:layout_marginStart="80dp"
-        android:layout_marginTop="575dp"
+        android:layout_marginTop="595dp"
         android:entries="@array/time_array" />
 
     <Button
@@ -198,6 +212,7 @@
         android:textColor="#4C1492"
         android:textColorLink="#4C1492"
         android:translationY="650dp" />
+
 
 
 </RelativeLayout>
